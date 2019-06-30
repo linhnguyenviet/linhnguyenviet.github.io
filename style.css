@@ -275,7 +275,7 @@ nav a:hover {
   font-size: 0.9em;
   cursor: pointer;
 }
-.intro__second input:hover {
+.intro__second button:hover {
   background-color: #ff5e00;
   color: white;
   cursor: pointer;
