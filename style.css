@@ -266,13 +266,14 @@ nav a:hover {
 .intro span a {
   color: #009688;
 }
-.intro__second input {
+.intro__second button {
   margin-top: 20px;
   width: 150px;
   background-color: rgb(245, 245, 245);
   border: 2px solid #009688;
   padding: 10px 5px;
   font-size: 0.9em;
+  cursor: pointer;
 }
 .intro__second input:hover {
   background-color: #ff5e00;
