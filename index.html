@@ -1,267 +1,279 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=9">
-        <meta name="viewport" content="initial-scale=1.0, width=device-width">
-        <meta name="author" content="">
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Patua One' rel='stylesheet'>
-    <body >
-        <header class="js-header" >
-           
-                <div class="takaosan">
-                    <img src="assets/images/ta.png">
-                </div>
-                <a href="javascript:void(0)"   class="navi__icon js-navi__icon">
-                <span></span>
-                <span ></span>
-                <span></span>
-            </a>
-                <div class="mainimg">
-                        <img class="mainimg__1" src="assets/images/mainimage.png">
-                        <img class="mainimg__2" src="assets/images/catchcopy.png">
-                </div>
-                <nav  >
-                        <ul >
-                            <li><a class="home"href="www.facebook.com">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">SHOP</a></li>
-                            <li><a href="#">ACCESS</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                        </ul>
-                        
-                    </nav>
-        </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Linh Nguyễn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Slabo+27px"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#nav--mobile ul").hide();  
 
-        <main >
-            <div class="wrap">
-            <div class="news">
-               
-                <div  class="news__tittle" >
-                        <div class="mid">
-                 <div class="news__tittle__h1">NEWS</div>
-                 </div>
-                </div>
-                <div class="news__line">
-                    <h3 class=news__date>2018.12.17</h3>
-                    <a href="" class="news__p">We are selling TAKAOSAN original hard shell</a>
-                </div>
+        $(".fa-bars").click(function(){
+          $("#nav--mobile ul").toggle();
+        })
 
-                <div class="news__line">
-                    <h3 class=news__date>2018.12.17</h3>
-                    <a href="" class="news__p">PFC free water repellent agent present campaign in progress</a>
-                </div>
-                    
-                <div class="news__line">
-                    <h3 class=news__date>2018.12.17</h3>
-                    <a href="" class="news__p">Information on the snowmobile athletic meet tour</a>
-                </div>
 
-                <div class="news__line">
-                    <h3 class=news__date>2018.12.17</h3>
-                    <a href="" class="news__p">The TAKAOSAN online shop has opened. Online coupons are being  distributed for a limited time. Do not  miss it ! </a>
-                </div>
-            </div>
+        $(".scroll").click(function scrolling() {
+            if(window.scrollY > 0) {
+                setTimeout(function() {
+                    window.scrollTo(0, window.scrollY - 30);
+                    scrolling();
+                }, 6);
+            };
+        });
+        
+      });
+    </script>
+  </head>
+  <body>
+     
+    <div class="scroll">
+        <i class="far fa-hand-point-up"></i>
+    </div>
+    <nav id="nav--mobile">
+      <div class="nav__bar">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+        <span>LINHDEV</span>
+      </div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a id="resume" href="#cv">Resume</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a target="_parent" href="mailto:aintnolinh@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-wrapper">
+      <div>
+        <div class="smallava">
+          <img src="man.png" alt="" />
+          <p>Linh Nguyen</p>
         </div>
-
-            <div class="feature">
-                   
-                    <div class="feature__tittle">
-                            <div class="mid">
-                            <div class="feature__tittle__h1">FEATURES</div>
-                            </div>
-                    </div>
-                    <div class="feature__part">
-                        <div class="feature__img1">
-                            <img src="assets/images/features-image.jpg" alt="">
-                        </div>
-                        <div class="feature__part1">
-                            <div class="feature__heading" >
-                                <h2>
-                                    Waterproof for the outdoor scene
-                                </h2>
-                            </div>
-
-                            <div  class="feature__img2">
-                                <img src="assets/images/aero888.png" alt="">
-                            </div>
-
-                            <div class="feature__p">
-                                <p> TAKAOSAN's harware pursues the best material and technology
-                                    and innovative design. </br>
-                                    It is a brand sticking to quality thoroughly.TAKAOSAN is developing various things. </br:>And the most popolar backpack "Aero888". Using a water repellent nylon with strength "ballistic nylon" on the table cloth, and a tough rubber called hyperon on the lining. Waterproof W on the front and back, it is safe even for outdoor scenes and usual steep rain.
-                                </p>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-
-
-            <div class="subs">
-                <div class="subs__tittle">
-                        <div class="mid">
-                        <div class="subs__tittle__h1">SUBSCRIPTION</div>
-                    </div>
-                </div>
-                <div class="subs__p__wrap">
-                    <div class="subs__p">
-                        <p> We run a flat-rate service that we will send recommended items every month to you. It's free for the first month so you can start with confidence. </p>
-                    </div>
-                </div>
-                <div class="subs__box row">
-                    <div class="subs__starter subs__starter--noclick">
-                        <img src="assets/images/start.jpg" alt="" class="subs__starter__img">
-                        <h3> Starter </h3>
-                        <h2> ¥2,400/m</h2>
-                        <h4> Starter pack to begin easily</h4>
-                        <button class="button ">more details</button>
-                    </div>
-
-                    <div class="subs__starter subs__starter--click  ">
-                        <img src="assets/images/start.jpg" alt="" class="subs__starter__img">
-                        <h3> Starter </h3>
-                        <h2> ¥2,400/m</h2>
-                        <h4> Starter pack to begin easily</h4>
-                        <button class="button ">more details</button>
-                    </div>
-
-                    <div class="subs__starter subs__starter--noclick">
-                            <img src="assets/images/standard.jpg" alt="" class="subs__starter__img">
-                            <h3> Standard</h3>
-                            <h2> ¥7,800/m</h2>
-                            <h4> Recommended standard pack </h4>
-                            <button class="button ">more details</button>
-                        </div>
-
-                        <div class="subs__starter subs__starter--click ">
-                            <img src="assets/images/standard.jpg" alt="" class="subs__starter__img">
-                            <h3> Standard</h3>
-                            <h2> ¥7,800/m</h2>
-                            <h4> Recommended standard pack </h4>
-                            <button class="button ">more details</button>
-                        </div>
-
-                     <div class="subs__starter subs__starter--noclick">
-                        <img src="assets/images/master.jpg" alt="" class="subs__starter__img">
-                        <h3> Master </h3>
-                        <h2> ¥16,400/m</h2>
-                        <h4> We wil deliver a high brand monthly</h4>
-                        <button class="button ">more details</button>
-                    </div>
-
-                    <div class="subs__starter subs__starter--click">
-                        <img src="assets/images/master.jpg" alt="" class="subs__starter__img">
-                        <h3> Master </h3>
-                        <h2> ¥16,400/m</h2>
-                        <h4> We wil deliver a high brand monthly</h4>
-                        <button class="button ">more details</button>
-                    </div>
-                   
-                </div>
+      </div>
+      <nav id="main">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a id="resume" href="#cv">Resume</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://github.com/linhnguyenviet" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.facebook.com/fatjamie" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/nguy%E1%BB%85n-linh-165a12172/"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>&copy;2019 All right reserved.</p>
+      </div>
+    </div>
+    
+    <div class="right">
+      <div class="hinh">
+          <div class="svg-wrapper">
+              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="320" />
+                <div class="text"><span>LINH NGUYEN</span><p id="chuthich">Developer</p></div>
+              </svg>
             </div>
-            <div class="item">
-            <div class="item__tittle">
-                      
-                <h1 class="item__tittle__h1">ITEMS</h1>
-                </div>
+      </div>
+      <div class="intro">
+        <div class="intro__first">
+          <h1>Hello!</h1>
         </div>
-            <div class="container--sp">
-                <div class="grid">
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                </div>
-              </div>
-              <div class="container--sp">
-                <div class="grid">
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                </div>
-              </div>
+        <div class="intro__second">
+          <p>
+            I am Linh, a Web Developer in Da Nang City. In brief, I am
+            passionate about coding, making products and eager to work on new
+            things with creative ideas. <br />
+            Welcome to my online <a href="#cv">portfolio</a>! Here is some of
+            what i am able to do and the collection of my finished and ongoing
+            works . Please feel free to explore & tell me what you think about
+            it!
+          </p>
+          <input type="button" value="Download CV" />
+        </div>
+      </div>
+ 
+      <div class="scroll">
+        <span><a href="#cv" style="opacity: 0;">a</a></span>
+        <span><a href="#cv" style="opacity: 0;">a</a></span>
+        <span><a href="#cv" style="opacity: 0;">a</a></span>
+      </div>
+      <div class="info" id="cv">
+        <div class="info__left">
+          <div class="info__left--1250px">
+            <div class="info__avatar info__avatar--1250px">
+              <img src="ava.jpg" />
+            </div>
+            <div class="info__name info___name--1250px">
+              <h2>Linh Nguyen</h2>
+            </div>
+            <div class="info__desc info__desc--1250px">
+              <p><i class="fas fa-tv"></i>&nbsp Front-End Developer</p>
+              <p><i class="fas fa-home"></i>&nbsp Danang, Vietnam</p>
+              <p><i class="fas fa-envelope"></i>&nbsp aintnolinh@gmail.com</p>
+              <p><i class="fas fa-phone-square"></i> &nbsp0918316116</p>
+              <hr />
+            </div>
+          </div>
+          <div class="info__skill">
+            <h2 class="h2--bigger"><i class="far fa-gem"></i> Skills</h2>
+            <p>HTML5/CSS3</p>
+            <div class="animation-bar-1">
+              <span style="width:90%" class="animation-bar-1--90">90%</span>
+            </div>
+            <p>ReactJS/Redux</p>
+            <div class="animation-bar-1">
+              <span style="width:85%" class="animation-bar-1--85">85%</span>
+            </div>
+            <p>Bootstrap/jQuery</p>
+            <div class="animation-bar-1">
+              <span style="width:75%" class="animation-bar-1--75">75%</span>
+            </div>
+            <p>UI/UX</p>
+            <div class="animation-bar-1">
+              <span style="width:75%" class="animation-bar-1--75">75%</span>
+            </div>
+            <p>English</p>
+            <div class="animation-bar-1">
+              <span style="width:90%" class="animation-bar-1--90">90%</span>
+            </div>
+            <p>Git + Aglie/Scrum</p>
+            <div class="animation-bar-1">
+              <span style="width:80%" class="animation-bar-1--80">80%</span>
+            </div>
+          </div>
+          <div>&nbsp</div>
+        </div>
+        <div class="info__right">
+          <div class="info__righttop">
+            <div>
+              <h2 class="h2--bigger">
+                <i class="fas fa-briefcase"></i> Work Experience
+              </h2>
+            </div>
+            <div>
+              <h4>Flower Shop</h4>
+              <h5 class="green-word">
+                <i class="far fa-calendar-alt"></i>
+                2019
+              </h5>
+              <p>
+                I used React to create a single page app to sell Flower and Redux to manage states.
+              </p>
+              <p><a href="https://github.com/linhnguyenviet/FlowerShopReact">Check it out</a></p>
+              <hr />
+            </div>
 
+            <div>
+              <h4>Freelance Deverloper</h4>
+              <h5 class="green-word">
+                <i class="far fa-calendar-alt"></i>
+                Mar 2012 - Dec 2014
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+              <hr />
+            </div>
+            <div>
+              <h4>Fsoft Junior</h4>
+              <h5 class="green-word">
+                <i class="far fa-calendar-alt"></i>
+                Mar 2012 - Dec 2014
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
+                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                soluta ea et odio, unde doloremque repellendus iure, iste.
+              </p>
+            </div>
+          </div>
+          <div class="info__rightbot">
+            <div>
+              <h2 class="h2--bigger">
+                <i class="fas fa-graduation-cap"></i> Education
+              </h2>
+            </div>
+            <div>
+              <h4>FPT University</h4>
+              <h5 class="green-word">
+                <i class="far fa-calendar-alt"></i>
+                Graduate : 2020
+              </h5>
+              <p>
+                <span style="color:rgb(206, 62, 62);font-weight:bold">70% </span> FPT's Scholarship by Logic Math
+              </p>
+              <hr />
+            </div>
 
-              <div class="container--pc">
-                <div class="grid">
-                  <div class="cell">
-                    <img src="assets/images/c.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/2.png" class="responsive-image">
-                  </div>
-                  <div class="cell">    
-                    <img src="assets/images/3.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/4.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/5.png" class="responsive-image">
-                  </div>
-                  <div class="cell">
-                    <img src="assets/images/6.png" class="responsive-image">
-                  </div>
-                </div>
-                <div class="grid">
-                    <div class="cell">
-                      <img src="assets/images/7.png" class="responsive-image">
-                    </div>
-                    <div class="cell">
-                      <img src="assets/images/8.png" class="responsive-image">
-                    </div>
-                    <div class="cell">
-                      <img src="assets/images/9.png" class="responsive-image">
-                    </div>
-                    <div class="cell">
-                      <img src="assets/images/10.png" class="responsive-image">
-                    </div>
-                    <div class="cell">
-                      <img src="assets/images/11.png" class="responsive-image">
-                    </div>
-                    <div class="cell">
-                      <img src="assets/images/12.png" class="responsive-image">
-                    </div>
-                  </div>
-              </div>
-        </main>
+            <div>
+              <h4>Quốc Học Huế High school</h4>
+              <h5 class="green-word">
+                <i class="far fa-calendar-alt"></i>
+                Aug 2014 - May 2017
+              </h5>
+              <p>
+               Chuyên Hóa Quốc học Huế.
+              </p>
+              <hr />
+            </div>
 
-        <footer>
-            <p>COPYRIGHT TAKAOSAN ALL RIGHTS RESERVED</p>
-            <script src="assets/js/libs/jquery.min.js"></script>
-            <script src="assets/js/common.js"></script>
-        </footer>
-    </body>
+            <div>
+              <h4>Front-End Developer Course in<a href = "https://iviettech.vn/">
+                <span style="color:rgb(206, 62, 62);font-weight:bold"> Iviettech</span>
+              </a></h4>
+              <h5 class="green-word">
+                <i class="far fa-calendar-alt"></i>
+                Graduate : 29/6/2019
+              </h5>
+              <p>
+                Graduated at excellent rank .
+              </p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
