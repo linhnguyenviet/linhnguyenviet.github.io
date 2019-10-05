@@ -8,6 +8,10 @@
   cursor: pointer;
   text-decoration: none;
 }
+form {
+  width:150px;
+  display: inline-block;
+}
 html {
   font-family: "Nanum Gothic Coding", monospace;
 }
@@ -93,6 +97,16 @@ body {
 }
 .svg-wrapper:hover span {
 
+}
+#toResume {
+  background :#009688;
+  color:white;
+  border: 1.5px solid rgb(99, 99, 99);
+}
+#toResume:hover {
+  background-color: #ff5e00;
+  color:white;
+  border: none;
 }
 #chuthich {
 
